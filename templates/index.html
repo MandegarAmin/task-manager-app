@@ -14,7 +14,10 @@
 
     <ul>
         {% for t in tasks %}
-            <li>{{ t }}</li>
+            <li>
+                {{ t }}
+                <a href = "/delete/{{ loop.index0}}" >Delete</a>
+            </li>
         {% endfor %}
     </ul>
 </body>
